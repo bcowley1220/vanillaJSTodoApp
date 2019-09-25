@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/listCard.css" />
+    <link rel="stylesheet" href="styles/todayCard.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flexR">
+        <ul class="flexR navList">
+          <li>Lists</li>
+          <li>Calendar</li>
+          <li>Account</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="listsCard" class="card flexC">
+        <h2>Your Todo Lists:</h2>
+        <ul id="listOfLists" class="flexC">
+          <li class="todoList flexR">
+            <p>Overview</p>
+          </li>
+          <li class=" flexR"><p>Personal</p></li>
+          <li class=" flexR"><p>Work</p></li>
+          <li class=" flexR"><p>ShoppingList</p></li>
+          <li class=" flexR"><p>HouseWork</p></li>
+        </ul>
+        <form id="newListForm" class="flexC">
+          <label for="listInput">New Todo List</label>
+          <input type="text" id="listInput" placeholder="Todo List" />
+          <button>Submit</button>
+        </form>
+      </section>
+      <section id="todayCard" class="card">
+        <h2>Today</h2>
+        <div id="todayTodoList">
+          <ul id="listOfToday"></ul>
+        </div>
+        <form id="todaysForm">
+          <label for="todaysInput">Today</label>
+          <input type="text" id="todaysInput" />
+          <button>Submit</button>
+        </form>
+      </section>
+      <section id="tomorrowCard" class="card">
+        <h2>Tomorrow</h2>
+        <div id="tomorrowTodoList"></div>
+        <form id="tomorrowsForm">
+          <label for="tomorrowsInput">Today</label>
+          <input type="text" id="tomorrowsInput" />
+          <button>Submit</button>
+        </form>
+      </section>
+      <section id="somedayCard" class="card">
+        <h2>Someday</h2>
+        <div id="somedayTodoList"></div>
+        <form id="somedaysForm">
+          <label for="somedaysInput">Today</label>
+          <input type="text" id="somdaysInput" />
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/todayCard.js"></script>
+  </body>
+</html>

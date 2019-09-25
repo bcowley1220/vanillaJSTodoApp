@@ -1,0 +1,39 @@
+#listOfToday {
+  /* height: 80%;
+  width: 100%; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+#todayTodoList {
+  height: 400px;
+}
+#todayTodoList > * {
+  display: flex;
+  width: 80%;
+  height: 15%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+/* .todoList {
+  width: 95%;
+  height: 10%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+} */
+#todaysForm {
+  height: 15%;
+  width: 95%;
+  border: solid 1px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#todaysInput {
+  width: 90%;
+  border-radius: 15px;
+  height: 20px;
+  text-align: center;
+}

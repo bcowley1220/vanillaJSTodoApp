@@ -1,0 +1,36 @@
+#listOfLists {
+  height: 80%;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#listOfLists > * {
+  display: flex;
+  width: 95%;
+  height: 10%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+/* .todoList {
+  width: 95%;
+  height: 10%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+} */
+#newListForm {
+  height: 15%;
+  width: 95%;
+  border: solid 1px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#listInput {
+  width: 90%;
+  border-radius: 15px;
+  height: 20px;
+  text-align: center;
+}

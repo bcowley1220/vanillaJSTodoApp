@@ -1,0 +1,4 @@
+- When someone creates a new list, JS will have to dymanically
+create a new card to match the info.
+
+- Separate style sheets, js files per component
