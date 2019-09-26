@@ -7,13 +7,14 @@
 #todayTodoList {
   height: 400px;
 }
-#todayTodoList > * {
+.task {
   display: flex;
   width: 80%;
   height: 15%;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  border: solid 1px;
 }
 /* .todoList {
   width: 95%;
