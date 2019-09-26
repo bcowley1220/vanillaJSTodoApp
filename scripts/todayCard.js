@@ -1,34 +1,33 @@
 //! eventHandlers
+//This function is called when new task is submitted
 let todayFormEventHandler = event => {
   event.preventDefault();
   createNewTask(event);
   todaysForm.reset();
 };
+//this function will run it's if statement when the finished button is clicked
 let xButtonEventHandler = event => {
   event.preventDefault();
-  console.log(event.target.id);
-  console.log(`button${event.target.parentNode.id}`);
   if (event.target.id === `button${event.target.parentNode.id}`) {
-    console.log("this shit is working");
     todaysTasks.splice(event.target.parentNode.id, 1);
     displayTasks();
   }
 };
 
+//! General Functions
+//This function creates a new object, and shoves it into the todaysTasks array
 let createNewTask = event => {
-  console.log(event.target[0].value);
   let newTask = {
     task: event.target[0].value
   };
   todaysTasks.push(newTask);
-  console.log(todaysTasks);
   displayTasks();
 };
 
+//This function resets the holder div's content, and displays the content of todaysTasks
 function displayTasks() {
   todayTodoList.innerHTML = "";
   for (let i = 0; i < todaysTasks.length; i++) {
-    console.log(todaysTasks[i].task);
     let div = document.createElement("div");
     div.innerHTML = `
     <div class="task" id="${i}">
@@ -50,6 +49,5 @@ let todayTodoList = document.querySelector("#todayTodoList");
 todaysForm.addEventListener("submit", todayFormEventHandler);
 todayTodoList.addEventListener("click", xButtonEventHandler);
 
-// Global Variables
-let taskIdNum = 0;
+//! Global Variables
 let todaysTasks = [];
