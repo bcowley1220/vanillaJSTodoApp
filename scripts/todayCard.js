@@ -44,7 +44,6 @@ function displayTasks() {
 let todaysForm = document.querySelector("#todaysForm");
 let listOfToday = document.querySelector("#listOfToday");
 let todayTodoList = document.querySelector("#todayTodoList");
-// let completedButton = document.querySelector()
 //! eventListeners
 todaysForm.addEventListener("submit", todayFormEventHandler);
 todayTodoList.addEventListener("click", xButtonEventHandler);
