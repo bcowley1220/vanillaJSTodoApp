@@ -1,12 +1,12 @@
 /* #todayCard {
 } */
-#listOfToday {
+#listOfSomeday {
   /* height: 80%;
   width: 100%; */
   flex-wrap: wrap;
   align-items: center;
 }
-#todayTodoList {
+#somedayTodoList {
   height: 550px;
   width: 95%;
   border: solid 1px;
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
 } */
-#todaysForm {
+#somedayForm {
   height: 15%;
   width: 95%;
   border: solid 1px;
@@ -42,10 +42,10 @@
   text-align: center;
   padding-top: 10px;
 }
-#todaysForm > * {
+#somedayForm > * {
   margin-top: 10px;
 }
-#todaysInput {
+#somedayInput {
   width: 90%;
   border-radius: 15px;
   height: 20px;

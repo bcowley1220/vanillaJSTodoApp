@@ -9,6 +9,7 @@ let todayFormEventHandler = event => {
 let xButtonEventHandler = event => {
   event.preventDefault();
   if (event.target.id === `button${event.target.parentNode.id}`) {
+    // console.log(completedList);
     todaysTasks.splice(event.target.parentNode.id, 1);
     displayTasks();
   }
@@ -18,8 +19,10 @@ let xButtonEventHandler = event => {
 //This function creates a new object, and shoves it into the todaysTasks array
 let createNewTask = event => {
   let newTask = {
-    task: event.target[0].value
+    task: event.target[0].value,
+    date: Date()
   };
+  console.log(newTask);
   todaysTasks.push(newTask);
   displayTasks();
 };
@@ -31,9 +34,8 @@ function displayTasks() {
     let div = document.createElement("div");
     div.innerHTML = `
     <div class="task" id="${i}">
-    <p>Task: ${todaysTasks[i].task}</p>
-    <p>Index: ${i}</p>
-    <button id="button${i}">Finished</button>
+    <p>Todo: ${todaysTasks[i].task}</p>
+    <button id="button${i}" class="todoButton">Done?</button>
     </div>
     `;
     todayTodoList.append(div);
@@ -51,3 +53,4 @@ todayTodoList.addEventListener("click", xButtonEventHandler);
 
 //! Global Variables
 let todaysTasks = [];
+let completedList = [];

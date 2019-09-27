@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/listCard.css" />
     <link rel="stylesheet" href="styles/todayCard.css" />
+    <link rel="stylesheet" href="styles/tomorrowCard.css" />
+    <link rel="stylesheet" href="styles/somedayCard.css" />
   </head>
   <body>
     <header>
       <nav class="flexR">
         <ul class="flexR navList">
-          <li>Lists</li>
-          <li>Calendar</li>
-          <li>Account</li>
+          <li>Now</li>
+          <li>Soon</li>
+          <li>Later</li>
+          <li>Done</li>
         </ul>
       </nav>
     </header>
@@ -37,39 +40,41 @@
           <button>Submit</button>
         </form>
       </section>
-      <section id="todayCard" class="card">
-        <h2>Today</h2>
-        <div id="todayTodoList">
+      <section id="todayCard" class="card flexC">
+        <h2>Now</h2>
+        <div id="todayTodoList" class="flexC">
           <!-- <div id="listOfToday"></div> -->
         </div>
         <form id="todaysForm">
-          <label for="todaysInput">Today</label>
+          <label for="todaysInput">Today's New Task</label>
           <input type="text" id="todaysInput" name="" placeholder="New Task" />
-          <!-- <label for="dueDate">Due Date</label>
-          <input type="date" name="dueDate" id="" /> -->
           <button>Submit</button>
         </form>
       </section>
-      <section id="tomorrowCard" class="card">
-        <h2>Tomorrow</h2>
+      <section id="tomorrowCard" class="card flexC">
+        <h2>Soon</h2>
         <div id="tomorrowTodoList"></div>
-        <form id="tomorrowsForm">
-          <label for="tomorrowsInput">Today</label>
-          <input type="text" id="tomorrowsInput" />
+        <form id="tomorrowForm" class="flexC">
+          <label for="tomorrowsInput">Tomorrow's New Task</label>
+          <input type="text" id="tomorrowsInput" placeholder="New Task" />
           <button>Submit</button>
         </form>
       </section>
-      <section id="somedayCard" class="card">
-        <h2>Someday</h2>
+      <section id="somedayCard" class="card flexC">
+        <h2>Later</h2>
         <div id="somedayTodoList"></div>
-        <form id="somedaysForm">
-          <label for="somedaysInput">Today</label>
-          <input type="text" id="somdaysInput" />
+        <form id="somedayForm">
+          <label for="somedayInput">Today</label>
+          <input type="text" id="somedayInput" />
+          <label for="taskDate"></label>
+          <input type="date" id="somedayDateInput" />
           <button>Submit</button>
         </form>
       </section>
     </main>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/todayCard.js"></script>
+    <script src="./scripts/tomorrowCard.js"></script>
+    <script src="./scripts/somedayCard.js"></script>
   </body>
 </html>

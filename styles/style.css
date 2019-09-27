@@ -25,13 +25,14 @@
   visibility: hidden;
 }
 #todayCard {
-  visibility: visible;
+  visibility: hidden;
 }
 #tomorrowCard {
   visibility: hidden;
+  /* z-index: 10; */
 }
 #somedayCard {
-  visibility: hidden;
+  visibility: visible;
 }
 
 /* Mobile First  */
