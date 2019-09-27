@@ -3,6 +3,8 @@
 let todayFormEventHandler = event => {
   event.preventDefault();
   createNewTask(event);
+  console.log(todaysTasks);
+
   todaysForm.reset();
 };
 //this function will run it's if statement when the finished button is clicked
@@ -11,7 +13,7 @@ let xButtonEventHandler = event => {
   if (event.target.id === `button${event.target.parentNode.id}`) {
     // console.log(completedList);
     todaysTasks.splice(event.target.parentNode.id, 1);
-    displayTasks();
+    displayTodayTasks();
   }
 };
 
@@ -24,13 +26,14 @@ let createNewTask = event => {
   };
   console.log(newTask);
   todaysTasks.push(newTask);
-  displayTasks();
+  displayTodayTasks();
 };
 
 //This function resets the holder div's content, and displays the content of todaysTasks
-function displayTasks() {
+function displayTodayTasks() {
   todayTodoList.innerHTML = "";
   for (let i = 0; i < todaysTasks.length; i++) {
+    console.log(todaysTasks[i]);
     let div = document.createElement("div");
     div.innerHTML = `
     <div class="task" id="${i}">
@@ -46,7 +49,6 @@ function displayTasks() {
 let todaysForm = document.querySelector("#todaysForm");
 let listOfToday = document.querySelector("#listOfToday");
 let todayTodoList = document.querySelector("#todayTodoList");
-// let completedButton = document.querySelector()
 //! eventListeners
 todaysForm.addEventListener("submit", todayFormEventHandler);
 todayTodoList.addEventListener("click", xButtonEventHandler);
