@@ -1,4 +1,18 @@
-- When someone creates a new list, JS will have to dymanically
+/- When someone creates a new list, JS will have to dymanically
 create a new card to match the info.
 
 - Separate style sheets, js files per component
+
+9/27 Updates & Remaining Tasks:
+- Finish stylings
+- Figure out filter system for done page
+- The date functionality for the someday page will cause issues
+with filtering and establishing a consistent date presentation
+- Desktop view
+- Add in add list card (This might be a stretch goal, that will
+require a dynamic presentation system for the tasks and 
+the ability to choose a list and have it populate upon selection.)
+  - While I don't think it would be that hard, I would have to do some major rewriting 
+  to get done some of these things without a major headache. 
+  - Classes would help immensely to that, and so would writing it in TypeScript.
+    - If I do another rewrite of this, I'll write it in an object oriented fashion instead of functional
