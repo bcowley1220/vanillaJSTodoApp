@@ -42,7 +42,7 @@
       </section>
       <section id="todayCard" class="card flexC">
         <h2>Now</h2>
-        <div id="todayTodoList" class="flexC">
+        <div id="todayTodoList" class="flexC taskDisplayDiv">
           <!-- <div id="listOfToday"></div> -->
         </div>
         <form id="todaysForm">
@@ -53,7 +53,7 @@
       </section>
       <section id="tomorrowCard" class="card flexC">
         <h2>Soon</h2>
-        <div id="tomorrowTodoList"></div>
+        <div id="tomorrowTodoList" class="flexC taskDisplayDiv"></div>
         <form id="tomorrowForm" class="flexC">
           <label for="tomorrowsInput">Tomorrow's New Task</label>
           <input type="text" id="tomorrowsInput" placeholder="New Task" />
@@ -62,7 +62,7 @@
       </section>
       <section id="somedayCard" class="card flexC">
         <h2>Later</h2>
-        <div id="somedayTodoList"></div>
+        <div id="somedayTodoList" class="flexC taskDisplayDiv"></div>
         <form id="somedayForm">
           <label for="somedayInput">Today</label>
           <input type="text" id="somedayInput" />
@@ -70,6 +70,10 @@
           <input type="date" id="somedayDateInput" />
           <button>Submit</button>
         </form>
+      </section>
+      <section id="completedCard" class="card flexC">
+        <h2>Completed Tasks:</h2>
+        <div id="completedList" class="flexC taskDisplayDiv"></div>
       </section>
     </main>
     <script src="./scripts/main.js"></script>

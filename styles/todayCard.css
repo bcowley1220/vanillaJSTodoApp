@@ -8,8 +8,8 @@
 }
 #todayTodoList {
   height: 550px;
-  width: 95%;
-  border: solid 1px;
+  width: 100%;
+  border: solid 0px 0px 1px 0px;
   border-radius: 15px 15px 0px 0px;
   align-items: center;
   /* justify-content: center; */
@@ -34,9 +34,9 @@
 } */
 #todaysForm {
   height: 15%;
-  width: 95%;
+  width: 100%;
   border: solid 1px;
-  border-radius: 0px 0px 15px 15px;
+  /* border-radius: 0px 0px 15px 15px; */
   justify-content: center;
   align-items: center;
   text-align: center;

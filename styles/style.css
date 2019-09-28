@@ -3,6 +3,15 @@
   margin: 0px;
 }
 
+h2 {
+  text-align: center;
+  width: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  border: solid 1px;
+  border-radius: 15px;
+}
 /* Bulk Stylings */
 .flexR {
   display: flex;
@@ -19,6 +28,15 @@
   /* justify-content: center; */
   align-items: center;
 }
+.taskDisplayDiv {
+  overflow: scroll;
+}
+.taskDisplayDiv::-webkit-scrollbar {
+  width: 0 !important;
+}
+.taskDisplayDiv {
+  overflow: -moz-scrollbars-none;
+}
 
 /* Visibility  */
 #listsCard {
@@ -32,6 +50,9 @@
   /* z-index: 10; */
 }
 #somedayCard {
+  visibility: hidden;
+}
+#completedCard {
   visibility: hidden;
 }
 
